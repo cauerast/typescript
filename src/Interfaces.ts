@@ -8,11 +8,15 @@ interface UserWallet {
 interface User {
     name: string,
     createdAt: Date,
-    wallet?: UserWallet
+    wallet?: UserWallet,
+}
+
+interface User {
+    talk(): void;
 }
 
 function createUser(name: string): User {
-    return { name, createdAt: new Date() };
+    return { name, createdAt: new Date(), talk(){ console.log("Eu sou  : ", name) }};
 }
 
 function updateWallet(user: User, wallet: UserWallet){
@@ -21,4 +25,5 @@ function updateWallet(user: User, wallet: UserWallet){
 
 const yolo = createUser("yolo");
 
+yolo.talk();
 updateWallet(yolo, {coins: 19})
