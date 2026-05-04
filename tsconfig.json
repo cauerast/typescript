@@ -3,10 +3,10 @@
         "esModuleInterop": true,
         "skipLibCheck": true,
         "strict": true,
-        "lib": ["ESNext"],
-        "target": "esnext",
-        "module": "nodenext",
-        "moduleResolution": "nodenext",
+        "lib": ["ESNext", "DOM"],
+        "target": "ESNext",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
 
         "rootDir": "src",
         "outDir": "build"
