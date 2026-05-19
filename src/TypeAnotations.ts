@@ -9,6 +9,11 @@ const myVar: any = "any type";
 const myNull: null = null;
 const myUndefined: undefined = undefined;
 
+function neverUserd(msg: string): never {
+    throw new Error(msg);
+}
+neverUserd("error");
+
 function sum(a:number, b:number): number{
     return a + b;
 }
@@ -35,5 +40,4 @@ const filter = (value: number) => value < 0;
 const numbers = [1, 2, 3, -1, -2, -3];
 
 numbers.filter(filter);
-
 

@@ -9,7 +9,13 @@
         "moduleResolution": "NodeNext",
 
         "rootDir": "src",
-        "outDir": "build"
+        "outDir": "build",
+
+        "types": ["node"],
+
+        // "noUnusedLocals": true,
+        // "noUnusedParameters": true,
+        // "noEmitOnError": true
     },
     "include": ["src"],
     "exclude": ["node_modules"]

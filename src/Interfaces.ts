@@ -2,7 +2,6 @@
 interface UserWallet {
     coins?: number,
     credits?: number;
-
 }
 
 interface User {
