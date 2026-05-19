@@ -3,7 +3,7 @@ interface UserWallet {
     credits?: number;
 }
 interface User {
-    name: string,
+    readonly name: string, // cant change
     createdAt: Date,
     wallet?: UserWallet,
 }
@@ -11,6 +11,14 @@ interface User {
 interface User {
     talk(): void;
 }
+
+const user:User = {
+    name: "yolo",
+    createdAt: new Date(),
+    talk(){console.log(`im ${user.name}`)}
+}
+
+// user.name = 'yolooo'; -> error because name prop is readonly
 
 function createUser(name: string): User {
     return { name, createdAt: new Date(), talk(){ console.log("Eu sou  : ", name) }};
