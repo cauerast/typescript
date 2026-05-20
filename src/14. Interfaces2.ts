@@ -29,9 +29,9 @@ console.log(add(2, 3)); // 5
 console.log(subtract(6, 3)); // 3
 
 
-
 // Declaration merging
 // Once an interface is declared, it cannot be directly modified. however, TypeScript allows what is informally referred to as "declaration merging" or "interface extension," which is often misconstrued as "re-opening." Declaration merging in TypeScript refers to the ability to extend or augment an existing declaration, including interfaces. This can be useful when you want to add new properties or methods to an existing interface without modifying the original declaration.
+
 
 // Declaration interface
 interface Car {
