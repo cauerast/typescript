@@ -56,3 +56,57 @@ const cat = new Cat();
 
 animalSound(dog); // woof
 animalSound(cat); // meow
+
+
+
+
+// Intersection types
+// Intersection types in TypeScript allow you to combine multiple types into a single type. The resulting type will have all the properties of each individual type. You create intersection types using the & operator.
+
+//Intersection Types
+
+// An intersection type is a way to combine multiple types into a single type that includes all the properties and methods of each constituent type. An intersection type is denoted by the & symbol.
+
+type Person = {
+    name: string,
+    age: number
+};
+
+type Employee = {
+    id: number, 
+    title: string
+};
+
+type PersonEmployee = Person & Employee;
+
+const alice: PersonEmployee = {
+    name: "Alice",
+    age: 30,
+    id: 1,
+    title: "Manager"
+};
+
+//
+
+type UserInfo = {
+    first: string,
+    last: string,
+    age: number
+};
+
+type AccountDetails = {
+    email: string,
+    password: string
+}
+
+type User = UserInfo & AccountDetails;
+
+const yolo: User = {
+    first: "yolo",
+    last: "WebDev",
+    age: 20,
+    email: "yolo@gmail.com",
+    password: "password12"
+}
+
+console.log(yolo);
