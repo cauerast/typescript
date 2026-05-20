@@ -1,3 +1,7 @@
+// Optional Properties
+
+// You can make a certain property optional in an object type by adding a question mark (?) after the property name.
+
 interface UserWallet {
     coins?: number,
     credits?: number;
