@@ -104,7 +104,7 @@ type NestedProm = DeepUnwrap<Promise<Promise<Promise<string>>>>; // string
 // --- Practical: Extract from React-like types ---
 type Props = {
     onClick: () => void;
-    children: React.ReactElement<any>;
+    // children: React.ReactElement<any>;
     className?: string;
 };
 
